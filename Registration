@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+        <script>
+       
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            </link>
+        </script>
+        <style>
+             div.main {
+            width: 70%;
+            padding :16px;
+            border: 5px solid gray;
+            margin-left: 0%;
+            margin-top: 0;
+        }
+        input[type=text], input[type=password],input[type=date], select[id=youtubers], select[id=gender] {
+            width: 36%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        </style>
+    </head>
+    <body background="registrationbg.jpg">
+      
+        <form action="http://localhost/Project/connect.php" method="post">
+                       
+            <div class="main">
+              <h2>Registeration</h2>
+                <label for="fname"><b>First Name</b></label>
+              <input type="text" placeholder="Enter First Name" name="fname" required><br>
+               
+              <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lname" required><br>
+                <label for="username"><b>Email Address</b></label>  
+              <input type="text" placeholder="Enter Email Address" name="username" required><br>
+              
+              <label for="password"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="password" required><br>
+              <label for="bdate"><b>Age</b></label>
+              <input type="date" placeholder="Enter DOB" name="bdate" required><br>
+              <label for="gender"><b>Gender</b></label>
+              <select id="gender" name="gender">
+                <option >Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+                </select><br>
+              <label for="youtubers"><b>Type of youtubers</b></label>
+              <select id="youtubers" name="youtubers">
+                <option value="Animation">Animation</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Conspirancy">Conspirancy</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Daily Vloggers">Daily Vloggers</option>
+                <option value="Design/Art">Design/Art</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Family">Family</option>
+                <option value="Dance">Dance</option>
+                <option value="Sports">Sports</option>
+                <option value="Tech">Tech</option>
+                <option value="Travel">Travel</option>
+                <option value="Pranks/Challenges">Pranks/Challenges</option>
+                <option value="Health & Fitness">Health & Fitness</option>
+                <option value="Learning">Learning</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="DIY">DIY</option>
+                <option value="ASMR">ASMR</option>
+              </select><br>
+              <button class="button-success" type="submit">Register</button>
+            </div>
+             
+
+      
+      </form>
+
+    </body>
+</html>
